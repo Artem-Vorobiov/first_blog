@@ -1,0 +1,178 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+
+@import 'normalize';
+
+ $dark: #424652;
+ $light: #9a9da4;
+ $highlight: #8bc6db;
+ $border: #e9e9e9;
+ $white: #ffffff;
+
+ *{
+    box-sizing: border-box;
+ }
+
+ body {
+    font-family: 'Raleway', sans-serif;
+ }
+
+ .clearfix:before,
+ .clearfix:after{
+    content:" ";
+    display: table;
+ }
+
+ .clearfix:after{
+    clear:both;
+ }
+
+ h1, h2, h3, h4, h5, h6, p, ul, li{
+    color:$dark;
+ }
+
+ h1 {
+    font-size: 2.5rem;
+ }
+
+ h2 {
+    font-size: 2rem;
+ }
+
+ h3{
+    font-size: 1.75rem;
+ }
+
+ h4{
+    font-size: 1.375rem;
+ }
+
+ h5{
+    font-size: 1.25rem;
+ }
+
+ h6{
+    font-size: 1rem;
+ }
+
+ p,li {
+    font-size: 1.1rem;
+    line-height: 1.75;
+ }
+
+ p, ul, ol {
+    margin: 0 0 1.6em 0;
+ }
+
+ hr {
+        width: 3em;
+        display: block;
+        height: 2px;
+        border: 0px;
+        margin: 2rem 0;
+        border-top: 4px solid $highlight;
+    }
+
+#main_navigation {
+    padding: 2.5em 5%;
+    border-bottom: 1px solid $border;
+    .name {
+        font-weight: 700;
+        font-size: .82em;
+        text-transform: uppercase;
+        letter-spacing: .4rem;
+        border: 2px solid $border;
+        padding: 1rem;
+        text-decoration: none;
+        color: $dark;
+        float: left;
+    }
+    nav{
+        float:right;
+        padding-top: 1.4rem;
+    }
+    a {
+        color: $dark;
+        text-decoration: none;
+        margin: 0 1rem;
+        font-size: 1rem;
+    }
+
+}
+
+.wrapper {
+    width: 88%;
+    margin: 0px auto;
+}
+
+.skinny_wrapper{
+    width:80%;
+    max-width: 760px;
+    margin: 0px auto;
+}
+
+.wrapper_padding{
+    padding: 3rem 0; 
+}
+
+#page_title{
+    text-align: center;
+    border-bottom: 1px solid $border;
+    padding: 2em 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+#main_footer{
+    padding: 2.5em 5%;
+    border-top: 1px solid $border;
+    .copyright{
+        float:left;
+        font-size: .9em;
+        margin: 0;
+    }
+    .nav {
+        float: right;
+        i {
+            color: $dark;
+            margin-left: 1em;
+            padding-top: .2em;
+            &:hover {
+                    color:$highlight;
+            }
+        }
+    }
+}
+
+input[type="text"], input[type='email'], input[type='password'], textarea {
+    width: 100%;
+    max-width: 100%;
+    height: 3em;
+    border: 2px solid $border;
+    padding: 1em;
+    margin: .5em 0 2em 0;
+}
+
+textarea {
+    min-height: 15em;
+}
+
+input[type="submit"], .button{
+    outline: none;
+     border: 2px solid $border;
+     background: transparent;
+     font-size: 1em;
+     text-align: center;
+     color: $dark;
+     text-decoration: none;
+     padding: 1em 2em;
+     &:hover{
+        border: 2px solid $highlight;
+        color:$highlight;
+     }
+}
+
+
+@import 'welcome';
+@import 'posts_projects';
