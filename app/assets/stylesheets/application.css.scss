@@ -8,7 +8,7 @@
  $light: #9a9da4;
  $highlight: #8bc6db;
  $border: #e9e9e9;
- $white: #ffffff;
+ $white: #fff;
 
  *{
     box-sizing: border-box;
@@ -154,6 +154,17 @@ input[type="text"], input[type='email'], input[type='password'], textarea {
     margin: .5em 0 2em 0;
 }
 
+.project_button {
+    background:$highlight;
+    color: $white;
+    text-decoration: none;
+    padding: 1em 2em;
+}
+
+.button_wrapper {
+    margin: 4em 0 0 0;
+    text-align: center;
+}
 textarea {
     min-height: 15em;
 }
