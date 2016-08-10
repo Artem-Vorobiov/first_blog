@@ -26,7 +26,7 @@ class ProjectsController < ApplicationController
 	def edit
 	end
 
-	def update
+	def update 
 		if @project.update project_params
 			redirect_to @project, notice: "Hazzahh"
 		else 
@@ -38,7 +38,7 @@ class ProjectsController < ApplicationController
 		@project.destroy
 		redirect_to projects_path
 	end
-
+ 
 	private
 
 	def project_params
