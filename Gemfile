@@ -17,6 +17,8 @@ gem 'redcarpet', '~> 3.3', '>= 3.3.4'
 gem 'friendly_id', '~> 5.1'
 
 
+gem 'mail_form'
+
 
 
 group :development, :test do

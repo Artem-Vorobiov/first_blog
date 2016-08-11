@@ -28,6 +28,10 @@
     clear:both;
  }
 
+ .hidden {
+    display: none;
+ }
+
  h1, h2, h3, h4, h5, h6, p, ul, li{
     color:$dark;
  }
@@ -152,6 +156,9 @@ input[type="text"], input[type='email'], input[type='password'], textarea {
     border: 2px solid $border;
     padding: 1em;
     margin: .5em 0 2em 0;
+    &:hover{
+        border: 2px solid $highlight;
+     }
 }
 
 .project_button {
@@ -170,7 +177,7 @@ textarea {
 }
 
 input[type="submit"], .button{
-    outline: none;
+     outline: none;
      border: 2px solid $border;
      background: transparent;
      font-size: 1em;
@@ -182,6 +189,10 @@ input[type="submit"], .button{
         border: 2px solid $highlight;
         color:$highlight;
      }
+}
+
+.page_title {
+    text-align: center;
 }
 
 
