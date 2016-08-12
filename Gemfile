@@ -18,6 +18,7 @@ gem 'friendly_id', '~> 5.1'
 
 
 gem 'mail_form'
+gem 'devise'
 
 
 

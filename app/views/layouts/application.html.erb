@@ -21,7 +21,14 @@
 	</header>
 
   <body>
-    <%= yield %>
+
+	<% if notice %>
+    <p class="notice"><%= notice %></p>
+  <% elseif alert %>
+    <p class="alert"><%= alert %></p>
+  <% end %>
+
+   <%= yield %>
 
     <footer id="main_footer">
 		<p class="copyright">&copy; 2016 Vorobiov Artem</p>
