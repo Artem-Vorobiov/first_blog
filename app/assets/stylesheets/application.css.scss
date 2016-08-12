@@ -195,6 +195,10 @@ input[type="submit"], .button{
     text-align: center;
 }
 
+.field {
+    margin: 1rem 0;
+}
+
 
 @import 'welcome';
 @import 'posts_projects';
