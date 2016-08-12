@@ -67,6 +67,23 @@
  	}
  }
 
+ .admin_links {
+ 	border-top: 1px solid $border;
+ 	border-bottom: 1px solid $border;
+ 	text-align: center;
+ 	padding: 1em 0;
+ 	margin: 3em 0;
+ 	a{
+ 		text-decoration: none;
+ 		cursor: pointer;
+ 		font-weight: bold;
+ 		color: $light;
+ 		margin: 0 1em;
+ 		font-size: .8em;
+ 		text-transform: uppercase;
+ 		}
+ }
+
  //--------Pagination----------
  .pagination:before,
  .pagination:after{
